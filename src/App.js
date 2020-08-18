@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyButton from './components/MyButton';
+import MyRules from './components/MyRules';
 
 function App() {
   return (
@@ -8,7 +10,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <MyButton title="Knapp 1"/>
+          <MyRules/>
         </p>
         <a
           className="App-link"
