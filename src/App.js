@@ -3,24 +3,23 @@ import logo from './logo.svg';
 import './App.css';
 import MyButton from './components/MyButton';
 import MyRules from './components/MyRules';
+import MyList from './components/MyList';
+import MyHeading from './components/MyHeading';
+import MyImg from './components/MyImg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <MyButton title="Knapp 1"/>
-          <MyRules/>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <MyHeading heading="LOTR" />
+        <MyImg src="ring.png" />
+        <MyRules/>
+        <MyList item1="Three Rings for the Elves" 
+        item2="Seven for the Dwarves" 
+        item3="Nine for Men"
+        item4="One for the Dark Lord"/>
+        <MyButton title="RVSP to Bilbo's B-day"/>
+
       </header>
     </div>
   );
